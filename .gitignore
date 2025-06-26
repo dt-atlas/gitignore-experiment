@@ -1,3 +1,7 @@
 .vscode/
-main
+
+# the lines below ignore any file without a file extension
+*
+!*.*
+!*/
 
