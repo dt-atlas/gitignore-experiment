@@ -1,7 +1,13 @@
 #include <stdio.h>
 
-int main(void)
+int main(int argc, char **argv)
 {
-	puts("hello world");
+	if (argc != 2) {
+		fprintf(stderr, "Usage: %s NAME\n", argv[0]);
+		return (1);
+	}
+
+	printf("hello, %s\n", argv[1]);
 	return (0);
 }
+
